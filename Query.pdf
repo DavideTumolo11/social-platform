@@ -1,0 +1,12 @@
+1
+
+SELECT `users`.`username`
+FROM `users`
+JOIN `medias` ON `users`.`id` = `medias`.`user_id`
+WHERE `medias`.`type` = 'video'
+GROUP BY `users`.`username`;
+
+
+2
+
+
