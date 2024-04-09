@@ -39,7 +39,6 @@ $resultSqlMedia = $connection->query($sqlMedia);
 
     ?>
 
-
         <div>
             <p>students who have posted at least one video <strong><?= $username ?></strong></p>
         </div>
@@ -48,7 +47,6 @@ $resultSqlMedia = $connection->query($sqlMedia);
 
 
     <?php endwhile; ?>
-
 
 </body>
 
