@@ -9,32 +9,40 @@ GROUP BY `users`.`username`;
 
 
 
-
-
 2
 
-
-
+SELECT `title`
+FROM `posts`
+LEFT JOIN `likes` ON `posts`.`id` = `likes`.`post_id`
+WHERE `likes`.`post_id` IS NULL;
 
 
 3
 
-
-
-
+SELECT `posts`.`id`, 
+COUNT(`likes`.`post_id`) AS `number_of_likes`
+FROM `posts`
+LEFT JOIN `likes` ON `posts`.`id` = `likes`.`post_id`
+GROUP BY `posts`.`id`;
 
 
 4
 
-
-
-
-
+SELECT `users`.`username`
+FROM `users`
+JOIN `medias` ON `users`.`id` = `medias`.`user_id`
+WHERE `medias`.`type` = 'video'
+GROUP BY `users`.`username`;
 
 
 5
 
-
+SELECT `posts`.`user_id`, 
+COUNT(`likes`.`post_id`) AS `total_likes`
+FROM `posts`
+JOIN `likes` ON `posts`.`id` = `likes`.`post_id`
+GROUP BY `posts`.`user_id`
+ORDER BY `total_likes`;
 
 
 
