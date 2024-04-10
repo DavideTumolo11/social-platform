@@ -34,7 +34,6 @@ JOIN `medias` ON `users`.`id` = `medias`.`user_id`
 WHERE `medias`.`type` = 'video'
 GROUP BY `users`.`username`;
 
-
 5
 
 SELECT `posts`.`user_id`, 
