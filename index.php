@@ -44,8 +44,6 @@ $resultSqlMedia = $connection->query($sqlMedia);
         </div>
 
 
-
-
     <?php endwhile; ?>
 
 </body>
