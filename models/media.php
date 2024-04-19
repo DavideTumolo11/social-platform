@@ -4,12 +4,12 @@ class Media
 {
     public $id;
     public $type;
-    public $path;
+    public $img;
 
-    public function __construct($id, $type, $path)
+    public function __construct($id, $type, $img)
     {
         $this->id = $id;
         $this->type = $type;
-        $this->path = $path;
+        $this->img = $img;
     }
 }
