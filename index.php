@@ -17,7 +17,6 @@ $resultSqlMedia = $connection->query($sqlMedia);
 ?>
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,11 +28,6 @@ $resultSqlMedia = $connection->query($sqlMedia);
 
 <body>
 
-    <div>
-
-
-
-    </div>
 
     <?php while ($row = $resultSqlMedia->fetch_assoc()) :
 

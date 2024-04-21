@@ -11,9 +11,6 @@ class Post
         $this->media = $media;
     }
 
-
-
-
     public function getPostId()
     {
         return $this->id;

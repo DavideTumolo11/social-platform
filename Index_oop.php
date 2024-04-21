@@ -17,8 +17,6 @@ var_dump($posts)
 ?>
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,10 +33,8 @@ var_dump($posts)
 
         <?php foreach ($posts as $post) : ?>
 
-
             <h3><?= $post->getPostId() ?></h3>
             <div></div><?= $post->getPostTitle() ?>
-
             <div><?= $post->getPostMedia() ?></div>
 
         <?php endforeach; ?>
