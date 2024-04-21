@@ -2,14 +2,27 @@
 
 class Media
 {
-    public $id;
-    public $type;
-    public $img;
 
-    public function __construct($id, $type, $img)
+
+    public function __construct(public $id, public $type, public $path)
     {
         $this->id = $id;
         $this->type = $type;
-        $this->img = $img;
+        $this->path = $path;
+    }
+
+
+    public function getMediaId()
+    {
+        return $this->id;
+    }
+
+    public function getMediaType()
+    {
+        return $this->type;
+    }
+    public function getMediaPath()
+    {
+        return $this->path;
     }
 }
